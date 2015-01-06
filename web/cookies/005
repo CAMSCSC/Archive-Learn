@@ -1,0 +1,37 @@
+<?php
+
+session_start(); // Start/resume a session in PHP.
+
+$_SESSION['authenticated'] = false;
+
+function login( $username, $password )
+{	
+	$database = new mysqli( 'localhost', 'DB_USER', 'DB_PASS', 'somedb' );
+	
+	$username = $database->real_escape_string( $username );
+	$password = hash( 'ripemd160', $password );
+	
+	$result = $database->query( "SELECT * FROM login WHERE username = '$username' AND password = '$password'" );
+	
+	if( $result && mysqli_num_rows( $result ) === 1 )
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+if( login( $_POST['username'], $_POST['password'] ) )
+{
+	$_SESSION['authenticated'] = true;
+	$_SESSION['user'] = $_POST['username'];
+	echo 'Success!';
+}
+else
+{
+	die( 'Failure' );
+}
+
+?>

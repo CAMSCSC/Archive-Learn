@@ -1,0 +1,33 @@
+<?php
+
+//Omitted database setup code
+
+//Get the posted user input
+//Something similar to something.php?user=stuff
+$input = $_POST['user'];
+
+//The twist
+if( $input == 'Karina' )
+{
+	exit();
+}
+
+//Execute a query (where '$input' is the PHP variable $input)
+$result = $database->query
+(
+	"SELECT Secret FROM secrets WHERE Name='$input'"
+);
+
+//For debugging purposes in case the query failed
+if( !$result )
+{
+	die( 'MySQL: Syntax error' );
+}
+
+//Print out all of the secrets in the order in which they were retrieved
+while( $row = mysqli_fetch_assoc( $result ) )
+{
+	echo( "Secrets: " . $row['Secret'] );
+}
+
+?>

@@ -1,0 +1,14 @@
+<?php
+
+session_start(); // Start/resume a session in PHP.
+
+if( $_SESSION['authenticated'] )
+{
+	echo 'Hello ' . $_SESSION['user'];
+}
+else
+{
+	die( 'You are not authorized' );
+}
+
+?>

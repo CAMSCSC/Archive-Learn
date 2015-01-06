@@ -1,0 +1,16 @@
+(real raw output)
+HTTP/1.1 200 OK
+Date: Fri, 01 Jan 1999 01:01:01 GMT
+Server: Apache
+X-Powered-By: PHP/5.4.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: name1=value1
+Set-Cookie: name2=value2; Path=/
+Vary: Accept-Encoding,Cookie
+Content-Encoding: gzip
+Content-Length: 903
+Keep-Alive: timeout=10, max=499
+Connection: Keep-Alive
+Content-Type: text/html; charset=utf-8

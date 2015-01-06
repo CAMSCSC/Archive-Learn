@@ -1,0 +1,178 @@
+html
+{
+	background-color: #111111;
+	position: relative;
+	min-height: 100%;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+body
+{
+	width: 70%;
+	min-width: 700px;
+	margin: 0 auto 150px;
+	text-align: left;
+	color: #EEEEEE;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 0;
+	line-height: 1.4em;
+ /*Use???*/;
+}
+
+h3
+{
+	padding-top: 20px;
+}
+
+a:link
+{
+	color: #66D9EF;
+}
+
+#home1
+{
+	opacity: 0;
+	font-size: 30px;
+	margin: 0;
+	left: 15%;
+	letter-spacing: 10px;
+	line-height: 100px;
+	position: absolute;
+	z-index: 2;
+	-webkit-transition: all 1.0s ease-in-out;
+	transition: all 1.0s ease-in-out;
+}
+
+#home2
+{
+	opacity: 0;
+	font-size: 30px;
+	margin: 0;
+	right: calc(15% - 10px);
+	letter-spacing: 10px;
+	line-height: 100px;
+	position: absolute;
+	z-index: 2;
+	-webkit-transition: all 1.0s ease-in-out;
+	transition: all 1.0s ease-in-out;
+}
+
+footer
+{
+	position: absolute;
+	background-color: #000;
+	left: 0;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 1.0s ease-in-out;
+	transition: all 1.0s ease-in-out;
+	cursor: pointer;
+	line-height: 1em;
+}
+
+footer a
+{
+	color: #66D9EF;
+}
+
+footer:hover
+{
+	background-color: #2F4309;
+}
+
+footer:hover > #home1
+{
+	opacity: 0.5;
+}
+
+footer:hover > #home2
+{
+	opacity: 0.5;
+}
+
+#license
+{
+	font-size: 0.6em;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	z-index: 3;
+}
+
+h1
+{
+	text-align: center;
+}
+
+pre.line-numbers
+{
+	width: calc(98% - 2.8em);
+}
+
+pre[data-line]
+{
+	width: calc(98% - 1em);
+}
+
+pre[data-line].line-numbers
+{
+	width: calc(98% - 1.8em);
+}
+
+.line-numbers .line-numbers-rows
+{
+	top: -0.1em; /*Sighing at the restrictive 1.5em codebox spacing.*/
+}
+
+pre
+{
+	width: 98%;
+	overflow: auto;
+	min-width: 700px;
+	margin-right: auto;
+	max-height: 500px;
+	line-height: 1.5em; /*otherwise line-highlight will blow up in chrome */
+}
+
+#highlight
+{
+	color: #A6E22E;
+}
+
+figure
+{
+	background-color: #272822;
+	font-family: Consolas, Monaco, "Andale Mono", monospace;
+	border-radius: 0.3em;
+	width: 98%;
+	margin: 0.5em 0px;
+	padding: 1em;
+	display: block;
+	text-align: center;
+	overflow-y: auto;
+}
+
+figcaption
+{
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+figure .space
+{
+	line-height: 0.3em;
+}

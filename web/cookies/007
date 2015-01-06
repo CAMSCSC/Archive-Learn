@@ -1,0 +1,21 @@
+<?php
+
+$value = 'Barr';
+
+function basic()
+{
+	if( !isset( $_COOKIE['name'] ) )
+	{
+		setcookie( 'name', $value );
+	}
+}
+
+function secure()
+{
+	if( !isset( $_COOKIE['name'] ) )
+	{
+		setcookie( 'name', $value, time() + 3600, '/', 'bar.org', true, true );
+	}
+}
+
+?>

@@ -1,0 +1,16 @@
+For Linux:
+1) Run the file using python - 
+	python file.py
+2) Run the file directly using a double click or by simply typing in file.py -
+	Add a shebang to the first line:
+	
+	#!/usr/bin/env python
+	
+	Then run by double clicking or typing file.py in the terminal.
+	
+For Windows:
+1) Run the file using python -
+	python file.py
+2) Run the file directly using a double click or by simply typing in file.py -
+	No need for a shebang since you've already set the enviornmental path during installation.
+	Simply run by double clicking or by typing file.py in CMD.

@@ -1,0 +1,6 @@
+Set-Cookie: name1=value1
+Set-Cookie: name2=value2; Path=/
+Set-Cookie: name3=value3; Domain=bar.org; Path=/
+Set-Cookie: name4=value4; Domain=.bar.org; Path=/
+Set-Cookie: name5=value5; Expires=Mon, 01 Jan 2099 11:11:11 GMT
+Set-Cookie: name6=value6; Secure; HttpOnly

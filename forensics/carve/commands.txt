@@ -1,0 +1,9 @@
+Scalpel Help:
+	scalpel -h
+Scalpel Basic Carve:
+	scalpel -i input.image
+	
+Foremost Help:
+	foremost -h
+Foremost Basic Carve:
+	foremost -t all -i input.image

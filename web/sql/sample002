@@ -1,0 +1,31 @@
+<?php
+
+//Create a new database
+//$database = new mysqli( DB_HOST, DB_USER, DB_PASS, DB_NAME );
+$database = new mysqli( 'localhost', 'DB_USER', 'DB_PASS', 'tutorial_1' );
+
+//For debugging purposes in case the connection failed
+if( !$database )
+{
+	die( 'MySQL: Wrong credentials' );
+}
+
+//Execute a query
+$result = $database->query
+(
+	"SELECT Secret FROM secrets"
+);
+
+//For debugging purposes in case the query failed
+if( !$result )
+{
+	die( 'MySQL: Syntax error' );
+}
+
+//Print out all of the secrets in the order in which they were retrieved
+while( $row = mysqli_fetch_assoc( $result ) )
+{
+	echo( "Secrets: " . $row['Secret'] );
+}
+
+?>

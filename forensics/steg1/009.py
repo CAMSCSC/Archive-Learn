@@ -1,0 +1,1 @@
+def hide(input_image_file, message):

@@ -1,0 +1,14 @@
+# 1)A 'Password' value with the letter b in it
+... Password LIKE '%b%'
+
+# 2)A 'Password' value where the first letter is b
+... Password LIKE 'b%'
+
+# 3)A 'Password' value where the second letter is b
+... Password LIKE '_b%'
+
+# 4)A 'Password' value where the last letter is b
+... Password LIKE '%b'
+
+# 5)A 'Password' value where the second to last letter is b
+... Password LIKE '%b_'

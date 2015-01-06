@@ -1,0 +1,15 @@
+--Get all columns from the table.
+SELECT * FROM secrets
+
+--Get only the column name
+SELECT Name FROM secrets
+
+--Get the name of the person whose ID is 4
+SELECT Name FROM secrets WHERE ID=4
+
+--Whose secret is uBarr?
+SELECT Name FROM secrets WHERE Secret='uBarr'
+
+--Get the ID if the person is Bob or his secret 600
+SELECT ID FROM secrets WHERE Name='Bob' AND Secret='600'
+--Note that 600 is not a number because it is in a text field 

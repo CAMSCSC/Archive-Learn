@@ -1,0 +1,36 @@
+<?php
+
+//Create a new database
+$database = new mysqli( 'localhost', 'DB_USER', 'DB_PASS', 'tutorial_2' );
+
+//For debugging purposes in case the connection failed
+if( !$database )
+{
+	die( 'MySQL: Wrong credentials' );
+}
+
+//Set the character set
+$database->set_charset("utf8");
+
+//Get the posted user input
+$user = $_POST['user'];
+
+//Execute a query
+$result = $database->query
+(
+	"SELECT Email FROM userinfo WHERE Username='$user'"
+);
+
+//Checks whether the query was successful and whether there is actually data (at least 1 row of matching data)
+if( !$result || mysqli_num_rows( $result ) == 0 )
+{
+	die( 'Error' );
+}
+
+//Prints out the email
+while( $row = mysqli_fetch_assoc( $result ) )
+{
+	echo( "Email: " . $row['Email'] );
+}
+
+?>

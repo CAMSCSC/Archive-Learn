@@ -1,0 +1,37 @@
+8-bit:
+(R + G + B) = 8 bits
+R = 3 bits
+G = 3 bits
+B = 2 bits
+Transparency extra.
+Total of 256 colors.
+
+16-bit:
+(R + G + B + A) = 16 bits
+Each 4 bits.
+Transparency optional.
+Total of 4096 colors and 16 levels of transparency.
+
+24-bit:
+(R + G + B) = 24 bits
+Each 8 bits.
+No transparency.
+Total of 16777216 colors.
+
+32-bit:
+(R + G + B + A) = 32 bits
+Each 8 bits.
+Transparency optional.
+Total of 16777216 colors and 256 levels of transparency.
+
+48-bit:
+(R + G + B) = 48 bits
+Each 16 bits.
+No transparency.
+Total of 4096^3 colors.
+
+64-bit:
+(R + G + B + A) = 64 bits
+Each 16 bits.
+Transparency optional.
+Total of 4096^3 colors and 4096 levels of transparency.

@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Sat, 09 Aug 2014 04:11:40 GMT
+Server: Apache
+X-Powered-By: PHP/5.4.30
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=82d97fa55120b4661b7335b664a98ce3; path=/
+Vary: Accept-Encoding,Cookie
+Content-Encoding: gzip
+Content-Length: 903
+Keep-Alive: timeout=10, max=499
+Connection: Keep-Alive
+Content-Type: text/html; charset=utf-8

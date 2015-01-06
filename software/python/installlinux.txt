@@ -1,0 +1,9 @@
+Downloading/Extracting Python:
+wget https://www.python.org/ftp/python/3.4.1/Python-3.4.1.tgz
+tar -xvzf Python-3.4.1.tgz
+cd Python-3.4.1
+
+Building Python (assumming you have the necessary build tools):
+./configure
+make
+make install

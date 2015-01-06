@@ -1,0 +1,15 @@
+<?php
+
+//Omitted Code
+
+//Checks whether the query was successful and whether there is only 1 row
+if( !$result || mysqli_num_rows( $result ) != 1 )
+{
+	die( 'Error' );
+}
+else
+{
+	//Code to perform action when user successfully logs in.
+}
+
+?>

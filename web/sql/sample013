@@ -1,0 +1,29 @@
+<?php
+
+$database = new mysqli( 'localhost', 'DB_USER', 'DB_PASS', 'DB_NAME' );
+
+$user = $_POST['username'];
+$pass = $_POST['password'];
+
+$result = $database->query
+(
+	"SELECT 'something' FROM 'table' WHERE 'usercolumn'='$user' AND 'passcolumn'='$pass'"
+);
+
+if( !$result || mysqli_num_rows( $result ) == 0 )
+{
+	die( 'Error' );
+}
+else
+{
+	//Code to perform action when user successfully logs in.
+}
+
+?>
+
+//What we want need to find out:
+//'DB_NAME': The database name.
+//'table': The table name.
+//'usercolumn': The first column's name.
+//'passcolumn': The second column's name.
+//Additional columns or tables on the server.
